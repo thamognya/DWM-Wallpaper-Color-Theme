@@ -1,0 +1,42 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{pgfplots}
+\usepackage{changepage}
+\usepackage{setspace}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+%title
+\title{}
+\author{Thamognya Kodi}
+\date{\today}
+
+%configuration
+%%renewcommands
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+%\renewcommand*{\thesection}{Question \arabic{section}.}
+%\renewcommand*{\thesubsection}{Part \alph{subsection}. }
+%\renewcommand*{\thesubsubsection}{SubPart \roman{subsubsection}.}
+\pgfplotsset{compat=1.16}
+\doublespacing
+%%tab
+\setlength{\parindent}{0pt}
+
+%new environments
+%%give 1 cm indent with subsection
+\newenvironment{tab}
+    {\adjustwidth{0.75cm}{0pt}}
+    {\endadjustwidth}
+
+
+%Begin Document
+\begin{document}
+\maketitle
+
+
+
+\end{document}
