@@ -1,0 +1,8 @@
+#!/bin/sh
+wallpaper=$(/bin/ls $HOME/.config/dwm_config/DWM-Wallpaper-Color-Theme/wallpaper | sort -R | head -n 1) && path="$HOME/Documents/pictures/wallpaper/" && wallpaper_path=$path$wallpaper
+wal -i $wallpaper_path
+path_to_config="/home/jeff/.config/dwm_config/DWM-Wallpaper-Color-Theme"
+$(cd $path_to_config/dwm/ && sudo make clean install>/dev/null)
+$(cd $path_to_config/st/ && sudo make clean install>/dev/null)
+$(cd $path_to_config/dmenu/ && sudo make clean install>/dev/null)
+zathura_color=$(exec /home/jeff/Documents/git_repos/Zathura-Pywal/genzathurarc > /home/jeff/.config/zathura/zathurarc)

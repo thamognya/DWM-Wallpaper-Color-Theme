@@ -1,0 +1,5 @@
+#!/bin/sh
+query=$(printf "%s" "$*") && file_name=$(echo $query | sed 's/.\{3\}$//')
+pdf=".pdf" && output="$file_name$pdf"
+pandoc $query --pdf-engine=pdflatex -o $output
+zathura $output
