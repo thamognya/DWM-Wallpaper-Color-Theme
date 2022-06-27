@@ -10,8 +10,8 @@ static const unsigned int gappov    = 0;       /* vert outer gap between windows
 static       int smartgaps          = 1;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "ComicMono NF:size=16" };
-static const char dmenufont[]       = "ComicMono NF:size=16";
+static const char *fonts[]          = { "Fira Code:size=16" };
+static const char dmenufont[]       = "Fira Code:size=16";
 
 
 #include "/home/jeff/.cache/wal/colors-wal-dwm.h"
